@@ -1,0 +1,143 @@
+/*Pantallas responsive: "Inicio" y "Proyectos"/*
+/*Página "INICIO":*/
+main {
+    background-image: linear-gradient(to bottom, rgb(77, 68, 68), rgb(193, 196, 212));
+    padding-bottom: 50px;
+   
+}
+header {background-color: black;}
+a {text-decoration: none;}
+
+.menu__li {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    
+}
+ul {
+    list-style: none;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}  
+
+ul ul  {
+    position: absolute; /*submenu*/
+    display: none; 
+}
+
+ul ul li {
+        display: block; /*submenu*/
+    }
+       
+ul li:hover ul {
+        display:block; /*submenu*/
+    }
+
+
+
+@media (min-width: 800px){
+    
+                .carousel { padding-top: 100px; 
+                            margin-bottom: 100px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 800px;
+                            height: 620px; 
+                          }
+                button {margin-top: 200px;}  /*tuve que poner márgenes a los botones prev y next porque se corrian de lugar al ajustar el padding del carrusel*/      
+    }
+    
+.dropdown {padding: 20px 20px;}
+
+.nosotros {display: inline-block;
+           margin: 180px 80px;}
+.nosotros__p {padding-right: 100px;}
+
+.contacto-form {display: inline-block;
+           margin: 0px 80px;}
+label {
+            display: block;
+        }
+.btn {
+            display: block;
+              margin-top: 10px;
+        }
+h2 {
+            margin-bottom: 50px;
+            color: rgb(17, 45, 156)
+        }
+
+footer {background-color: rgb(193, 196, 212);
+padding: 80px 0px;
+}
+    
+.ayp {font-size: xx-large;
+    font-weight: 600;}
+
+
+/*A continuación: Página "PROYECTOS"*/
+
+.img {padding: 60px 60px;
+     max-width: 600px;
+     max-height: 420px;
+          }
+.img:hover {transform: scale(1.5, 1.5);
+            transition: 1s;}
+
+
+.en-venta {margin-top: 100px;}
+
+.fotos {margin: 0px 0px;} /*el div tenia un margen predeterminado que tuve que eliminar */
+
+.menu__li:hover {transform: translateY(-2px);
+                 transition: 0.5s;
+                 }
+
+/*a continuación pag "Institucional"*/
+
+.nosotros__titulo {
+    margin-bottom: 150px;
+}
+
+
+.fotos-personas {display: grid;
+                 grid-template-columns: 1fr 1fr;
+                 grid-template-rows: auto auto;
+                 justify-items: center;
+                 row-gap: 20px;
+}
+
+.arquitecto {
+    height: auto; 
+    width: auto; 
+    max-width: 600px; 
+    max-height: 600px;
+}
+
+.arquitectob {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;}
+
+/*pag "Contacto"*/
+
+.institucional {padding: 100px 250px 100px 180px;}
+
+.nosotros__titulo {padding-left: 180px;}
+
+.contacto {padding: 100px 180px;}
+
+/*pag Novedades*/
+
+.titulo-novedades {padding: 150px;}
+
+.fotos-novedades {display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+
+.fotonov {max-width: 600px;
+        max-height: auto;}
+
+.novedades__p {margin-top: 20px;
+}
